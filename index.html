@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curbside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="header__logo">
+                <img src="asset/logo.svg" alt="">
+                <h1>curbside</h1>
+            </div>
+            <i class="fa-duotone fa-bars"></i>
+        <div class="header__menu" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Help</a></li>
+                <li><a href="">jobs</a></li>
+                <li><a href="">For retailers</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="header__textbox">
+            <h1>A new way to shop</h1>
+            <p>curbside makes it Easy to find, buy and <br>
+            pickup products at nearby stores</p>
+        <div class="header__button">
+            <button class="download apple">
+                <i class="fa fa-apple fa-2x"></i>
+                     <span class="p1">Download from</span>
+                     <span class="p2">App Store</span>
+             </button>
+
+             <div class="download android">
+                <i class="fa fa-android fa-2x"></i>
+                <span class="p1">Download from</span>
+                <span class="p2">Google Play</span>
+              </div>
+        </div>
+        </div>
+
+       
+        
+
+    </section>
+
+    <section class="product">
+        <h1>How it works</h1>
+        <p>The Curbside app allows you to find and buy products availiable at nearby stores such as target
+            when your order is readyto pick up we notify you
+        </p>
+        <div class="row">
+
+            <div class="product-col">
+                <img src="asset/warehouse-svgrepo-com.svg" alt="">
+                <h2>Find and buy products</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla unde dicta blanditiis adipisci laudantium. 
+                        Dolores tempore itaque temporibus! Excepturi perspiciatis
+
+                </p>
+
+            </div>
+            <div class="product-col">
+                <img src="asset/warehouse-svgrepo-com.svg" alt="">
+                <h2>In-store pickup</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla unde dicta blanditiis adipisci laudantium. 
+                        Dolores tempore itaque temporibus! Excepturi perspiciatis
+
+                </p>
+
+            </div>
+            <div class="product-col">
+                <img src="asset/house-rent-svgrepo-com.svg" alt="">
+                <h2>curbside pick</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla unde dicta blanditiis adipisci laudantium. 
+                        Dolores tempore itaque temporibus! Excepturi perspiciatis
+
+                </p>
+
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!---javascript for toggle Menu -->
+    <script>
+        var navlinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+    
+</body>
+</html>
